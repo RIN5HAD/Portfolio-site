@@ -99,3 +99,107 @@ nav h3 a{
     letter-spacing: 6px;
 }
 /* Home Page End*/
+
+/* about section start */
+
+#about{
+    padding: 80px 0;
+    /* color: #1EB1F7; */
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%; /*size*/
+}
+
+/* .sub-titles{
+    font-size: 60px;
+    font-weight: 600;
+    color: #E5E5E5; 
+} */
+
+/* delete below  */
+.sub-title{
+    
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    line-height: 0.2;
+}
+.sub-title h1{
+    color: rgba(31, 131, 134, 0.644);
+    font-size: 8rem;
+}
+.sub-title h6{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #E5E5E5;
+}
+
+/* here  */
+
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #1EB1F7;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #1EB1F7;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+.tab-space li{
+    letter-spacing: 1px;
+}
+.tab-space li a{
+    text-decoration: none;
+    color: #E5E5E5;
+}
+/* about setion end */
