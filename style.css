@@ -391,7 +391,8 @@ nav h3 a{
 }
 .services-list div{
     /* background-color: #262626; */
-    background-color: #090d2c;
+    background-color: #090d2c; 
+    /* background-color: #0C1F50; */
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -409,21 +410,118 @@ nav h3 a{
     margin-bottom: 15px;
 }
 
-.services-list div a{
+/* .services-list div a{
     text-decoration: none;
     color: #E5E5E5;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+} */
+
+.services-list div a{
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 18px;
+    background: #013DF0;
+    color: #E5E5E5; 
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all .45s ease;
+
+}
+.services-list div a:hover{
+    letter-spacing: 2px;
+    color: #02fdff; 
+
 }
 .services-list div p{
     font-size: 14px;
 }
 .services-list div:hover{
-    /* background-color: #1EB1F7; */
-    background-color: #5800FF; 
+    background-color: #0C1F50;
     transform: translateY(-20px);
 
 }
 /* Services section end */
 
+/* portfolio section start */
+#portfolio .container{
+    width: 100%;
+    height: 100vh; 
+    /* background-color: #00D7; */
+}
+#portfolio .p-body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+
+
+}
+.row2{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row2 img{
+    height: 16rem;
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), #0C1F50);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #00D7FF;
+}
+.layer p{
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.layer i{
+    color: #E5E5E5;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #013DF0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.row2:hover img{
+    transform: scale(1.1);
+    opacity: 0.2;
+}
+.row2:hover .layer{
+    height: 100%;
+}
+/* Portfolio section end */
