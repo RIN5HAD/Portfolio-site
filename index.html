@@ -8,8 +8,16 @@
     <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
+     <!-- circle-progess bar js file -->
+     <script src="circle-progress.js"></script>
     <!-- Fontshare -->
     <link href="https://api.fontshare.com/v2/css?f[]=telma@500&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -21,6 +29,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -46,7 +55,7 @@
                         <h1>About</h1>
                         <h6>Myself</h6>
                     </div> 
-                    <p>I love learning. Every day I push myself to learn something new, whether that be about web designing, web development, learning new frameworks, music, or miscellaneous facts about the universe. I am currently studying information technology at Calicut University, have taken a few Python, Java, and C programming courses, and have been doing freelance web design and development since 2023.</p>
+                    <p>I love learning. Every day I push myself to learn something new, whether that be about web designing, web development, learning new frameworks,or miscellaneous facts about the universe. I am currently studying Information Technology at Calicut University, have taken a few Python, Java, and C programming courses, and have been doing freelance web design and development since 2023.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('Details')">Details</p>
@@ -87,9 +96,52 @@
             </div>
         </div>
     </div>
-
+    <br>
     <!-- about section end -->
+    
+    <!-- Skills Section Start  -->
 
+        <div id="skills">
+            <h1>Skills</h1>
+            <div class="container">
+                
+                <div class="skills">
+                    <h2>HTML</h2>
+                    <div class="progress-bar">
+                        <div class="html"><span>86%</span></div>
+                    </div>
+                    <h2>CSS</h2>
+                    <div class="progress-bar">
+                        <div class="css"><span>74%</span></div>
+                    </div>
+                    <h2>JAVASCRIPT</h2>
+                    <div class="progress-bar">
+                        <div class="js"><span>56%</span></div>
+                    </div>
+                    <h2>Bootstrap</h2>
+                    <div class="progress-bar">
+                        <div class="bootstrap"><span>68%</span></div>
+                    </div>
+                    <h2>Python</h2>
+                    <div class="progress-bar">
+                        <div class="python"><span>72%</span></div>
+                    </div>
+                    <h2>C</h2>
+                    <div class="progress-bar">
+                        <div class="c"><span>88%</span></div>
+                    </div>
+                   
+                    <br><br>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <!-- Skills Section End -->
 
     <script>
         var tablinks=document.getElementsByClassName("tab-links");

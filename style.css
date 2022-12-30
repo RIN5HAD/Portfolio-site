@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -117,7 +119,9 @@ nav h3 a{
 
 }
 .about-col-1 img{
-    width: 100%;
+    margin-top: 10%; /* DL1*/
+    width: 100%; 
+    height: 68vh; /* DL2*/
     border-radius: 15px;
 }
 
@@ -125,13 +129,6 @@ nav h3 a{
     flex-basis: 60%; /*size*/
 }
 
-/* .sub-titles{
-    font-size: 60px;
-    font-weight: 600;
-    color: #E5E5E5; 
-} */
-
-/* delete below  */
 .sub-title{
     
     text-align: center;
@@ -148,8 +145,6 @@ nav h3 a{
     font-weight: 300;
     color: #E5E5E5;
 }
-
-/* here  */
 
 
 .tab-titles{
@@ -203,3 +198,146 @@ nav h3 a{
     color: #E5E5E5;
 }
 /* about setion end */
+
+
+/* skills Section start  */
+
+#skills h1{
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    justify-content:  center;
+    color: #E5E5E5;
+    font-size: 8rem;
+}
+#skills .container{
+    width: 100%;
+    /* height: 100vh;*/
+    /* background: #222; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #E5E5E5;
+    font-size: 15px;
+}
+.progress-bar{
+    background: #959595;
+    width: 600px;
+    height:10px ;
+    border-radius: 5px;
+}
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    /* background: red; */
+}
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-left: -20px;
+    color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ /* progress bar for HTML  */
+.html{
+    background-color: #ED6316; 
+    /* background-color: #EF981F; */
+    animation: html 1.5s linear forwards;
+}
+.html span{
+    border: 1px solid #ED6316;
+}
+@keyframes html{
+    100%{
+        width: 86%;
+    }
+}
+
+/* Progress bar for css */
+.css{
+    background-color: #5800FF;
+    animation: css 2s linear forwards;
+}
+.css span{
+    border: 1px solid #5800FF;
+}
+@keyframes css{
+    100%{
+        width: 74%;
+    }
+}
+
+/* Progress bar for js */
+.js{ 
+    background-color: #E7191F;
+    animation: js 2s linear forwards;
+}
+.js span{
+    border: 1px solid #E7191F;
+}
+@keyframes js{
+    100%{
+        width: 46%;
+    }
+}
+
+/* progress bar for Bootstrap  */
+.bootstrap{
+    background-color: #00D7FF;
+    animation:bootstrap 2s linear forwards;
+}
+.bootstrap span{
+    border: 1px solid #00D7FF;
+}
+@keyframes bootstrap{
+    100%{
+        width: 68%;
+    }
+}
+
+
+/* progress bar for python */
+.python{
+    background: #FDFF00;
+    animation: python 2s linear forwards;
+}
+.python span{
+    border: 1px solid #FDFF00;
+}
+@keyframes python{
+    100%{
+        width: 72%;
+    }
+}
+
+
+.c{
+    background-color: #FB2576;
+    animation:c 2s linear forwards;
+}
+.c span{
+    border: 1px solid #FB2576;
+}
+@keyframes c{
+    100%{
+        width: 88%;
+    }
+}
+
+
+/* skills section end  */
