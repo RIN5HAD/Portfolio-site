@@ -18,7 +18,8 @@
     
     <!-- font aweosome -->
     <script src="https://kit.fontawesome.com/6627d139cc.js" crossorigin="anonymous"></script>
-
+    <!-- typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <!-- Home Page start -->
@@ -38,7 +39,7 @@
             <div class="home-text">
                 <!-- <p>The Web Designer</p> -->
                 <h1>Hi, I'm <span>Rinshad</span></h1>
-                <p>Kerala based Frontend Developer</p>
+                <p>Kerala based <span class="typeEffect"></span></p>
             </div>
         </div>
      </header>
@@ -103,37 +104,38 @@
     <!-- Skills Section Start  -->
 
         <div id="skills">
-            <h1>Skills</h1>
             <div class="container">
-                
-                <div class="skills">
-                    <h2>HTML</h2>
-                    <div class="progress-bar">
-                        <div class="html"><span>86%</span></div>
+                <div class="s-head">
+                    <h1>Skills</h1>
+                    <h6>What i Know</h6>
+                </div>
+                <div class="s-body">
+                    <div class="skills">
+                        <h2>HTML</h2>
+                        <div class="progress-bar">
+                            <div class="html"><span>86%</span></div>
+                        </div>
+                        <h2>CSS</h2>
+                        <div class="progress-bar">
+                            <div class="css"><span>74%</span></div>
+                        </div>
+                        <h2>JAVASCRIPT</h2>
+                        <div class="progress-bar">
+                            <div class="js"><span>56%</span></div>
+                        </div>
+                        <h2>Bootstrap</h2>
+                        <div class="progress-bar">
+                            <div class="bootstrap"><span>68%</span></div>
+                        </div>
+                        <h2>Python</h2>
+                        <div class="progress-bar">
+                            <div class="python"><span>72%</span></div>
+                        </div>
+                        <h2>C</h2>
+                        <div class="progress-bar">
+                            <div class="c"><span>88%</span></div>
+                        </div>
                     </div>
-                    <h2>CSS</h2>
-                    <div class="progress-bar">
-                        <div class="css"><span>74%</span></div>
-                    </div>
-                    <h2>JAVASCRIPT</h2>
-                    <div class="progress-bar">
-                        <div class="js"><span>56%</span></div>
-                    </div>
-                    <h2>Bootstrap</h2>
-                    <div class="progress-bar">
-                        <div class="bootstrap"><span>68%</span></div>
-                    </div>
-                    <h2>Python</h2>
-                    <div class="progress-bar">
-                        <div class="python"><span>72%</span></div>
-                    </div>
-                    <h2>C</h2>
-                    <div class="progress-bar">
-                        <div class="c"><span>88%</span></div>
-                    </div>
-                   
-                    <br><br>
-
                 </div>
             </div>
         </div>
@@ -142,33 +144,34 @@
 
     <!-- Services Section start -->
         <div id="services">
-            <div class="cotainer"></div>
-            <h1 class="sub-titles">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <!-- <i class="fa-light fa-laptop"></i> -->
-                    <h2>Web Design</h2>
-                    <!-- <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p> -->
-                    <p>I offer professional web design services to help businesses and individuals create a strong online presence. From designing a visually appealing and user-friendly website to implementing effective search engine optimization techniques, I can help you achieve your online goals</p>
-                    <a href="https://google.com">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>As a UI/UX designer, I have a passion for creating user experiences that are both functional and visually stunning. Whether you need a simple brochure website or a more complex e-commerce platform, I have the skills and experience to bring your vision to life.</p>
-                    <a href="https://google.com">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>App Design</h2>
-                    <p>"I specialize in designing responsive apps that are optimized for all devices, including smartphones and tablets. My goal is to create an app that is not only visually appealing, but also easy to navigate and use for your users.</p>
-                    <a href="https://google.com">Learn more</a>
+            <div class="container">
+                <h1 class="sub-titles">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <!-- <i class="fa-light fa-laptop"></i> -->
+                        <h2>Web Design</h2>
+                        <!-- <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p> -->
+                        <p>I offer professional web design services to help businesses and individuals create a strong online presence. From designing a visually appealing and user-friendly website to implementing effective search engine optimization techniques, I can help you achieve your online goals</p>
+                        <a href="https://google.com">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>As a UI/UX designer, I have a passion for creating user experiences that are both functional and visually stunning. Whether you need a simple brochure website or a more complex e-commerce platform, I have the skills and experience to bring your vision to life.</p>
+                        <a href="https://google.com">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Design</h2>
+                        <p>"I specialize in designing responsive apps that are optimized for all devices, including smartphones and tablets. My goal is to create an app that is not only visually appealing, but also easy to navigate and use for your users.</p>
+                        <a href="https://google.com">Learn more</a>
+                    </div>
                 </div>
             </div>
         </div>
     <!-- Services section end -->
-    <script>
+     <script>
         var tablinks=document.getElementsByClassName("tab-links");
         var tabcontents=document.getElementsByClassName("tab-contents");
 
@@ -182,6 +185,13 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+
+        var typed = new Typed(".typeEffect", {
+            strings:["Web Designer","App Desiner","Web Developer","App Developer","Full Stack Developer","UI/UX Designer"],
+            typeSpeed: 100,
+            backspeed: 90,
+            loop:true
+        });
 
     </script>
 </body>
