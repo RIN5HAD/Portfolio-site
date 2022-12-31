@@ -120,9 +120,9 @@ nav h3 a{
 
 }
 .about-col-1 img{
-    margin-top: 10%; /* DL1*/
+    /* margin-top: 10%; DL1 */
     width: 100%; 
-    height: 68vh; /* DL2*/
+    /* height: 68vh; DL2 */
     border-radius: 15px;
 }
 
@@ -525,3 +525,179 @@ nav h3 a{
     height: 100%;
 }
 /* Portfolio section end */
+
+/* Contact section start */
+
+/* #contact .container {
+    background-color: #222;
+    height: 100vh;
+    width: 100%;  
+} */
+.c-left{
+    flex-basis: 35%;
+}
+.c-right{
+    flex-basis: 60%;
+}
+
+.c-left p{
+    margin-top: 30px;
+}
+.c-left p i{
+    color: #1EB1F7;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-media{
+    margin-top: 30px;
+}
+.social-media a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #E5E5E5;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-media a:hover{
+    color: #1EB1F7;
+    transform: translateY(-5px);
+
+}
+.btn{
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #233e85;
+    padding: 14px 50px;
+    border-radius: 6px;
+    display: inline-block;
+    background: #0C1F50;
+    color: #E5E5E5;
+    transition: background 0.5s;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #0f9ddf;
+}
+
+.c-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #233e85;
+    padding: 15px;
+    margin: 15px 0;
+    color: #E5E5E5;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #090d2c;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+.Link {
+    text-decoration: none;
+    color: #E5E5E5;
+}
+
+.copyright span{
+    color: #1EB1F7;
+}
+.copyright a{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Contact section End */
+
+/* nav bar responsive start*/
+nav .fas{
+    display: none;
+}
+/* nav bar responsive end*/
+
+/* make responsive */
+
+@media only screen and (max-width: 400px){
+    .home-text h1{
+        margin-top: 50%;
+        font-size: 40px;
+    }
+    .home-text p {
+        font-size: 17px;
+        word-spacing: none;
+        letter-spacing: 2px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #090d2c;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 60px; 
+    }
+
+    .sub-title h1{
+        font-size: 4rem;
+    }
+    .about-col-2{
+        font-size: 15px;
+    }
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .c-left, .c-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+}

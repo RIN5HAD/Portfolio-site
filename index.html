@@ -23,18 +23,21 @@
 </head>
 <body>
     <!-- Home Page start -->
-    <header>
+    <header id="home">
         <div class="contianer">
             <nav>
                 <h3 class="nav-logo"><a  href="#home"><span>R</span>inshad</a></h3>
-                <ul>
+                <ul id="navBar">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
                 </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openMenu()"></i>
+                
             </nav>
             <div class="home-text">
                 <!-- <p>The Web Designer</p> -->
@@ -185,13 +188,13 @@
                     <img src="images/work/Amazon Prime.png" alt="Project 1">
                     <div class="layer">
                         <h5>Amazon Prime</h5>
-                        <p>Videp Streaming Platform Where You Can Watch Movies and Series</p>
+                        <p>Video Streaming Platform Where You Can Watch Movies and Series</p>
                         <a href="https://www.primevideo.com/"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 
                 <div class="row2">
-                    <img src="images/work/SpaceX.png" alt="Project 1">
+                    <img src="images/work/SpaceX.png" alt="Project 2">
                     <div class="layer">
                         <h5>SpaceX</h5>
                         <p>American Spacecraft manufacturer,Launcher and Satelite comunication Corporations's website</p>
@@ -200,16 +203,16 @@
                 </div>
 
                 <div class="row2">
-                    <img src="images/work/Netflix.png" alt="Project 1">
+                    <img src="images/work/Netflix.png" alt="Project 3">
                     <div class="layer">
                         <h5>Netflix</h5>
-                        <p>Videp Streaming Platform Where You Can Watch Movies and Series</p>
+                        <p>Video Streaming Platform Where You Can Watch Movies and Series</p>
                         <a href="https://www.netflix.com/"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
 
                 <div class="row2">
-                    <img src="images/work/Slack.png" alt="Project 1">
+                    <img src="images/work/Slack.png" alt="Project 4">
                     <div class="layer">
                         <h5>Slack</h5>
                         <p>Instant Messaging App For Business That Connect People to The Information they need</p>
@@ -218,7 +221,7 @@
                 </div>
 
                 <div class="row2">
-                    <img src="images/work/Tesla.png" alt="Project 1">
+                    <img src="images/work/Tesla.png" alt="Project 5">
                     <div class="layer">
                         <h5>Tesla</h5>
                         <p>Where You can Buy Tesla cars and Others electric storage devices rtc</p>
@@ -227,7 +230,7 @@
                 </div>
 
                 <div class="row2">
-                    <img src="images/work/Blockchain.png" alt="Project 1">
+                    <img src="images/work/Blockchain.png" alt="Project 6">
                     <div class="layer">
                         <h5>Blockchain</h5>
                         <p>Full-Stack Crypto Services Platform Which You Can Buy or Sell CryptoCurrencies<p>
@@ -239,6 +242,42 @@
     </div>
         
     <!-- Portfolio section end -->
+
+    <!-- Contact section start -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="c-left">
+                    <h1 class="sub-titles">Connect Me</h1>
+                    <a href="mailto:rinshad@duck.com" class="Link"><p><i class="  fas fa-paper-plane"></i>rinshad@duck.com</p></a>
+                    <p><i class="fas fa-phone-square-alt"></i>9526989631</p>
+                    <div class="social-media">
+                        
+                        <a href="https://wa.me/919526989631"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/rinshad-p-040a57223"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:rinshad@duck.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/RIN5HAD/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/r1n5had"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/r1n5had/"><i class="fa-brands fa-instagram"></i></a>
+                        
+                        
+                    </div>
+                </div>
+                <div class="c-right">
+                    <form action="">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email Id" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> Copyright By Alpha<br>Design and Developed By <a class="Link" href="https://rinshad.live"><span>R</span>inshad</a></p>
+        </div>
+    </div>
+    <!-- Contact section End -->
      <script>
         var tablinks=document.getElementsByClassName("tab-links");
         var tabcontents=document.getElementsByClassName("tab-contents");
@@ -254,6 +293,7 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
+        // type effect
         var typed = new Typed(".typeEffect", {
             strings:["Web Designer","App Desiner","Web Developer","App Developer","Full Stack Developer","UI/UX Designer"],
             typeSpeed: 100,
@@ -261,6 +301,14 @@
             loop:true
         });
 
+        // navbar
+        var navBar = document.getElementById("navBar");
+        function openMenu(){
+            navBar.style.right="0";
+        }
+        function closeMenu(){
+            navBar.style.right="-200px";
+        }
     </script>
 </body>
 </html>
