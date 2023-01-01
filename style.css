@@ -673,6 +673,7 @@ nav .fas{
 
     .copyright{
         font-size: 14px;
+        margin-top: 3rem
     }
 
     .progress-bar{
@@ -737,8 +738,8 @@ nav .fas{
         margin-top: 25px;
     }
     .btn{
-        margin: 50px;
         margin-top: 15px;
+        margin-left: 20%;
     }
     .nav-logo{
         margin: 10px -10px;
