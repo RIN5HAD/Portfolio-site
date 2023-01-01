@@ -673,7 +673,6 @@ nav .fas{
 
     .copyright{
         font-size: 14px;
-        margin-top: 3rem
     }
 
     .progress-bar{
@@ -704,7 +703,6 @@ nav .fas{
         margin-bottom: 3rem;
     }
     #portfolio {
-        
         margin-bottom: 5rem;
     }
     #portfolio .container{
@@ -715,10 +713,10 @@ nav .fas{
         grid-template-columns: repeat(auto-fit, minmax(250px, auto));
         align-items: center;
         gap: 5rem;
-        
-
     }
-    
+    #contact .container{
+        height: 100vh;
+    }    
     .c-left h1{
         margin-bottom: 2rem;
     }
