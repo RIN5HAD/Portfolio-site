@@ -259,7 +259,7 @@
                     <p><i class="fas fa-phone-square-alt"></i>9526989631</p>
                     <div class="social-media">
                         
-                        <a href="https://wa.me/919526989631"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/919526989631?text=Hello Rinshad"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.linkedin.com/in/rinshad-p-040a57223"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="mailto:rinshad@duck.com"><i class="fa-solid fa-envelope"></i></a>
                         <a href="https://github.com/RIN5HAD/"><i class="fa-brands fa-github"></i></a>
@@ -270,12 +270,13 @@
                     </div>
                 </div>
                 <div class="c-right">
-                    <form action="">
+                    <form action="" name="contact-response">
                         <input type="text" name="Name" id="" placeholder="Your Name" required>
                         <input type="email" name="Email" id="" placeholder="Your Email Id" required>
                         <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -302,7 +303,7 @@
 
         // type effect
         var typed = new Typed(".typeEffect", {
-            strings:["Web Designer","App Desiner","Web Developer","App Developer","Full Stack Developer","UI/UX Designer"],
+            strings:["Web Designer","App Designer","Web Developer","App Developer","Full Stack Developer","UI/UX Designer"],
             typeSpeed: 100,
             backspeed: 90,
             loop:true
@@ -316,6 +317,28 @@
         function closeMenu(){
             navBar.style.right="-200px";
         }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyUR2-pEA29JLDt8hwYX-wzkYwAg3-pjqCw_mi9JfX8uPtUuQA2esHkmWVNi3zrrntE6w/exec'
+        const form = document.forms['contact-response']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => {
+            msh.innerHTML = "Message Not Delivered something Went Wrong!!!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+        })
+        })
     </script>
 </body>
 </html>

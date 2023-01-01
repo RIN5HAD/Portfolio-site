@@ -346,7 +346,7 @@ nav h3 a{
 }
 #services .container{
     /* background-color: #FB2576; */
-    /* height: 100vh; */
+    height: 100vh;
     padding-top: 5rem;
 }
 .sub-titles{
@@ -362,9 +362,7 @@ nav h3 a{
     margin-top: 50px;
 }
 .services-list div{
-    /* background-color: #262626; */
     background-color: #090d2c; 
-    /* background-color: #0C1F50; */
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -381,14 +379,6 @@ nav h3 a{
     font-weight: 500;
     margin-bottom: 15px;
 }
-
-/* .services-list div a{
-    text-decoration: none;
-    color: #E5E5E5;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-} */
 
 .services-list div a{
     margin-top: 20px;
@@ -421,7 +411,8 @@ nav h3 a{
 /* portfolio section start */
 #portfolio .container{
     width: 100%;
-     height: auto;  
+     height: 100vh;
+     padding-top: 3rem;  
     /* background-color: #00D7; */
 }
 #portfolio .p-body{
@@ -498,11 +489,11 @@ nav h3 a{
 
 /* Contact section start */
 
-/* #contact .container {
-    background-color: #222;
-    height: 100vh;
-    width: 100%;  
-} */
+ #contact .container {
+    height: 87vh;
+    padding-top: 3rem;
+    background-color: #0e1436; 
+} 
 .c-left{
     flex-basis: 35%;
 }
@@ -577,7 +568,6 @@ form input, form textarea{
     padding: 25px 0;
     background: #090d2c;
     font-weight: 300;
-    margin-top: 20px;
 
 }
 .Link {
@@ -593,6 +583,11 @@ form input, form textarea{
     font-weight: 500;
 }
 
+#msg{
+    color: #1EB1F7;
+    margin-top: -40px;
+    display: block;
+}
 /* Contact section End */
 
 /* nav bar responsive start*/
@@ -617,8 +612,11 @@ nav .fas{
     nav .fas{
         display: block;
         font-size: 25px;
+        margin-right: -0.5rem;
     }
-
+    .nav-logo a{
+        margin-left: -2rem;
+    }
     nav ul{
         background: #090d2c;
         position: fixed;
@@ -698,16 +696,18 @@ nav .fas{
     }
     #services{
         padding: 20px 5px ;
-        
     }
     #services .container{
+        height: auto;
         padding-top: 2rem;
         margin-bottom: 3rem;
     }
     #portfolio {
+        
         margin-bottom: 5rem;
     }
     #portfolio .container{
+        height: auto;
         padding-top: 5rem;    
     }
     #portfolio .p-body{
