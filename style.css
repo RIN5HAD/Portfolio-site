@@ -386,8 +386,10 @@ span.green {
 
 @media only screen and (min-height: 500px) {
 
-  .viewFull {
+/*   .viewFull {
     display: none;
-  }
+  } */
+  body {
+    display: none;
 
 }
