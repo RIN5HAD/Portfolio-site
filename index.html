@@ -1,111 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RINSHAD's Portfolio Website</title>
-    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+<!doctype html>
+<title>Site Maintenance</title>
+<style>
+  body { text-align: center; padding: 150px; }
+  h1 { font-size: 50px; }
+  body { font: 20px Helvetica, sans-serif; color: #333; }
+  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+  a { color: #dc8100; text-decoration: none; }
+  a:hover { color: #333; text-decoration: none; }
+</style>
 
-    <!-- Fontshare -->
-    <link href="https://api.fontshare.com/v2/css?f[]=telma@500&display=swap" rel="stylesheet">
-
-</head>
-<body>
-    <!-- Home Page start -->
-    <header>
-        <div class="contianer">
-            <nav>
-                <h3 class="nav-logo"><a  href="#home"><span>R</span>inshad</a></h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="home-text">
-                <!-- <p>The Web Designer</p> -->
-                <h1>Hi, I'm <span>Rinshad</span></h1>
-                <p>Kerala based Frontend Developer</p>
-            </div>
-        </div>
-     </header>
-    <!-- Home Page end -->
-
-    <!-- About section start -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/Avatar 2.jpg" alt="image" ">
-                </div>
-                <div class="about-col-2">
-                    <div class="sub-title">
-                        <h1>About</h1>
-                        <h6>Myself</h6>
-                    </div> 
-                    <p>I love learning. Every day I push myself to learn something new, whether that be about web designing, web development, learning new frameworks, music, or miscellaneous facts about the universe. I am currently studying information technology at Calicut University, have taken a few Python, Java, and C programming courses, and have been doing freelance web design and development since 2023.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Details')">Details</p>
-                        <p class="tab-links " onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-
-                    <!-- Skills  -->
-                    <div class="tab-contents active-tab" id="Details">
-                        <ul class="tab-space">
-                            <li><span>Name</span><br>RINSHAD</li>
-                            <li><span>Email</span><br><a href="mailto:rinshad@duck.com">rinshad@duck.com</a></li>
-                            <li><span>Phone Number</span><br>9526989631</li>
-                            <li><span>Place</span><br>Pulikkal,Kerala</li>
-                            
-
-                            
-                        </ul>
-                    </div>
-                    <!-- Experience  -->
-                    <div class="tab-contents" id="Experience">
-                        <ul class="tab-space">
-                            <li><span>2021 - Current</span><br>Full Stack Developer <br>Amazon</li>
-                            <li><span>2019 - 2020</span><br>Backend Developer <br> Apple</li>
-                            <li><span>2018 - 2019</span><br>Web designer <br>Adobe</li>
-                        </ul>
-                    </div>
-                    <!-- Education  -->
-                    <div class="tab-contents" id="Education">
-                        <ul class="tab-space">
-                            <li><span>2020 - Current</span><br>B Tech Information Technology<br> University of Calicut</li>
-                            <li><span>2018 - 2020</span><br>DHSE Science <br>Govt HSS Kottappuram</li>
-                            <li><span>2017 - 2018</span><br>SSLC <br>PPMHSS KOTTUKKARA</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+<article>
+    <h1>We&rsquo;ll be back soon!</h1>
+    <div>
+        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:admin@rinshad.tech">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
+        <p>&mdash; The Rinshad</p>
     </div>
-
-    <!-- about section end -->
-
-
-    <script>
-        var tablinks=document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-    </script>
-</body>
-</html>
+</article>
