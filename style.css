@@ -1,205 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
-
-body{
-    background-color: #080C25;
-    color: #E5E5E5;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
 }
-header{
-    width: 100%;
-    height: 100vh;
-    background-image:none;
-    background-size: cover;
-    background-position: center;
-    
+section {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
-
-/* home page starting */
-.container{
-    padding: 10px 10%;
+section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000, #0f0, #000);
+  animation: animate 5s linear infinite;
 }
-
-/* navbar start */
-nav{
-    margin-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@keyframes animate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }
-
-
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+section span {
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
 }
-nav ul li a{
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #1EB1F7;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after{
-    width: 100%;
-}
-
-nav h3 a{
-    color: #E5E5E5;
-}
-.nav-logo span{
-    color: #1EB1F7;
-}
-.nav-logo{
-    font-size: xx-large;
-    font-weight: bold;
-    margin: 10px 20px;
-    font-family: 'Telma', cursive;
-}
-
-.nav-logo a{
-    text-decoration: none;
-}
-.nav-logo a:hover{
-    color: #1EB1F7;
-}
-/* navbar end  */
-
-.home-text{
-    margin-left: 10%;
-    margin-top: 20%;
-    font-size: 30px;
-}
-.home-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-.home-text h1 span{
-    color: #1EB1F7;
-}
-.home-text p{
-    font-weight: lighter;
-    word-spacing: 5px;
-    letter-spacing: 6px;
-}
-/* Home Page End*/
-
-/* about section start */
-
-#about{
-    padding: 80px 0;
-    /* color: #1EB1F7; */
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.about-col-1{
-    flex-basis: 35%;
-
-}
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-}
-
-.about-col-2{
-    flex-basis: 60%; /*size*/
-}
-
-/* .sub-titles{
-    font-size: 60px;
-    font-weight: 600;
-    color: #E5E5E5; 
-} */
-
-/* delete below  */
-.sub-title{
-    
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 6rem;
-    line-height: 0.2;
-}
-.sub-title h1{
-    color: rgba(31, 131, 134, 0.644);
-    font-size: 8rem;
-}
-.sub-title h6{
-    font-size: 2rem;
-    font-weight: 300;
-    color: #E5E5E5;
-}
-
-/* here  */
-
-
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #1EB1F7;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-.tab-links.active-link::after{
-    width: 50%;
+section span:hover {
+  background: #0f0;
+  transition: 0s;
 }
 
 
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
+@media (max-width: 900px) {
+  section span {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
 }
-
-.tab-contents ul li span{
-    color: #1EB1F7;
-    font-size: 14px;
+@media (max-width: 600px) {
+  section span {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
 }
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-    display: block;
-}
-
-.tab-space li{
-    letter-spacing: 1px;
-}
-.tab-space li a{
-    text-decoration: none;
-    color: #E5E5E5;
-}
-/* about setion end */
